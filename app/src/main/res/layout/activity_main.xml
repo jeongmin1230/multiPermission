@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="아래의 버튼을 클릭하면 각 정보가 나올 수 있게 합니다."/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="연락처 보기"
+        android:id="@+id/btnShowContacts"
+        android:onClick="onClickShowContact" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가져온 연락처 : "
+        android:textSize="30dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="연락처가 여기에 표시됩니다."
+        android:id="@+id/tvContactsShow"
+        android:textSize="20dp"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="촬영하기"
+        android:id="@+id/btnCamera"
+        android:onClick="onClickCamera" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="250dp"
+        android:minWidth="250dp"
+        android:src="@drawable/java"
+        android:id="@+id/ivCameraShow" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="촬영한 사진이 위에 나옵니다."
+        android:textSize="20dp"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="핸드폰 상태 확인"
+        android:id="@+id/btnCheckPhoneState"
+        android:onClick="onClickCheckPhoneState" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="핸드폰 상태입니다."
+        android:id="@+id/tvPhoneStatus"
+        android:textSize="20dp"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>
+
+    <!--연락처 보기, 카메라 촬영, 폰 상태 확인-->
